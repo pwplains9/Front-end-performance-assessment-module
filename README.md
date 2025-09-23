@@ -1,6 +1,14 @@
 # Frontend Performance Assessor
 
-A comprehensive module for assessing frontend developer performance with support for different levels (Junior/Middle/Senior) and frameworks (Vue, React, Vanilla JS).
+[![npm version](https://badge.fury.io/js/frontend-performance-assessor.svg)](https://badge.fury.io/js/frontend-performance-assessor)
+[![Downloads](https://img.shields.io/npm/dm/frontend-performance-assessor.svg)](https://npmjs.org/package/frontend-performance-assessor)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue.svg)](https://www.typescriptlang.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-16%2B-green.svg)](https://nodejs.org/)
+[![CLI](https://img.shields.io/badge/CLI-Available-brightgreen.svg)](https://www.npmjs.com/package/frontend-performance-assessor)
+[![i18n](https://img.shields.io/badge/i18n-EN%20%7C%20RU%20%7C%20UA-blue.svg)](#-language-support)
+
+🔍 A comprehensive module for assessing frontend developer performance with support for different levels (Junior/Middle/Senior) and frameworks (Vue, React, Angular, Vanilla JS). Includes internationalization support for English, Russian, and Ukrainian.
 
 ## 🌍 Documentation Languages
 
