@@ -338,9 +338,7 @@ If you find a bug or want to suggest an improvement, create an issue in the [Git
 
 ## 📞 Support
 
-- 📧 Email: support@frontend-assessor.com
-- 💬 Discord: [Frontend Assessor Community](https://discord.gg/frontend-assessor)
-- 📖 Documentation: [docs.frontend-assessor.com](https://docs.frontend-assessor.com)
+- 📧 Email: byalexdesign@gmail.com
 
 ---
 

@@ -338,9 +338,7 @@ MIT License - див. файл [LICENSE](../LICENSE)
 
 ## 📞 Підтримка
 
-- 📧 Email: support@frontend-assessor.com
-- 💬 Discord: [Frontend Assessor Community](https://discord.gg/frontend-assessor)
-- 📖 Документація: [docs.frontend-assessor.com](https://docs.frontend-assessor.com)
+- 📧 Email: byalexdesign@gmail.com
 
 ---
 
