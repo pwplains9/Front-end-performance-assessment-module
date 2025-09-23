@@ -1,0 +1,144 @@
+{
+  "assessment": {
+    "starting": "Starting project assessment: {{path}}",
+    "completed": "Assessment completed! Overall score: {{score}}/100 ({{level}})",
+    "framework": "Framework: {{framework}}",
+    "outputFormat": "Output format: {{format}}",
+    "targetLevel": "Target level: {{level}}",
+    "overallScore": "Overall Score",
+    "developerLevel": "Developer Level"
+  },
+  
+  "categories": {
+    "codeQuality": "Code Quality",
+    "performance": "Performance",
+    "architecture": "Architecture",
+    "bestPractices": "Best Practices",
+    "maintainability": "Maintainability"
+  },
+  
+  "rules": {
+    "namingConventions": "Use camelCase for variables and functions",
+    "functionLength": "Found {{count}} functions longer than 50 lines. Consider decomposition.",
+    "cyclomaticComplexity": "Cyclomatic complexity {{complexity}} exceeds allowed ({{maxComplexity}})",
+    "magicNumbers": "Found {{count}} potential magic numbers. Use named constants.",
+    "codeDuplication": "Found {{count}} duplicated lines. Consider refactoring.",
+    "commentsQuality": "Insufficient comments for file of this size",
+    
+    "bundleSize": "File size {{size}}KB exceeds recommended ({{maxSize}}KB)",
+    "lazyLoading": "Consider using lazy loading to optimize bundle",
+    "heavyOperations": "Found {{count}} potentially heavy operations in render. Use useMemo/computed",
+    "memoryLeaks": "Found {{count}} potential memory leaks. Add cleanup functions",
+    "unnecessaryRenders": "Component with complex props should use memoization",
+    "imageOptimization": "Consider using modern image formats (WebP, AVIF)",
+    
+    "separationOfConcerns": "Component contains too much business logic. Extract to separate services",
+    "dependencyInjection": "Use dependency injection instead of direct instance creation",
+    "singleResponsibility": "File exports {{count}} entities. Consider splitting into modules",
+    "layeredArchitecture": "Components should not directly access data layer. Use services",
+    "designPatterns": "Consider using Singleton pattern for services",
+    "moduleCoupling": "High module coupling. Consider architecture refactoring",
+    
+    "typescriptUsage": "Consider migrating to TypeScript for large files",
+    "errorHandling": "Async operations should include error handling",
+    "securityPractices": "Using innerHTML can lead to XSS",
+    "testingCoverage": "Component should have tests",
+    "accessibility": "Images should have alt attribute",
+    "frameworkConventions": "Do not mix class components with hooks",
+    
+    "documentation": "Insufficient JSDoc comments for public functions and classes",
+    "codeReadability": "{{count}} lines exceed 120 characters. Use line breaks",
+    "namingConsistency": "Mixing camelCase and snake_case. Choose one style",
+    "deadCode": "Found {{count}} unused imports",
+    "configurationManagement": "Found hardcoded URLs or paths. Use configuration files",
+    "errorMessages": "Use more informative error messages"
+  },
+  
+  "levels": {
+    "junior": {
+      "name": "JUNIOR",
+      "description": "Entry-level developer. Need to study basics and best practices.",
+      "criteria": [
+        "Knowledge of JavaScript/TypeScript basics",
+        "Understanding of HTML/CSS",
+        "Basic framework skills",
+        "Simple error handling",
+        "Clean and readable code"
+      ]
+    },
+    "middle": {
+      "name": "MIDDLE",
+      "description": "Mid-level developer. Good understanding of basics, areas for improvement exist.",
+      "criteria": [
+        "Advanced JavaScript/TypeScript concepts",
+        "Code testing",
+        "Architectural patterns",
+        "Performance optimization",
+        "API and async programming"
+      ]
+    },
+    "senior": {
+      "name": "SENIOR",
+      "description": "High-level developer. Excellent code quality and architectural solutions.",
+      "criteria": [
+        "Deep understanding of architecture",
+        "SOLID principles and Clean Code",
+        "Application security",
+        "Mentoring and code review",
+        "Technical leadership"
+      ]
+    }
+  },
+  
+  "report": {
+    "title": "Frontend Performance Assessment Report",
+    "categoriesBreakdown": "Categories Breakdown",
+    "topIssues": "Top Critical Issues",
+    "recommendations": "Recommendations",
+    "summary": "Summary",
+    "fileAnalysis": "File Analysis",
+    "issuesOverview": "Issues Overview",
+    "criticalIssues": "Critical Issues",
+    "warnings": "Warnings",
+    "noIssuesFound": "No issues found! Great job!",
+    "detailedAnalysis": "Detailed Analysis"
+  },
+  
+  "cli": {
+    "commands": {
+      "assess": "Run project assessment",
+      "init": "Create configuration file",
+      "rules": "Show available rules",
+      "levels": "Show level criteria"
+    },
+    "messages": {
+      "projectNotFound": "Project not found: {{path}}",
+      "configCreated": "Configuration file created: frontend-assessor.config.json",
+      "availableRules": "Available assessment rules:",
+      "levelCriteria": "Developer level criteria:",
+      "assessmentStarting": "Starting project assessment...",
+      "assessmentCompleted": "Assessment completed successfully",
+      "reportGenerated": "{{format}} report generated: {{path}}",
+      "error": "Error during assessment:"
+    }
+  },
+  
+  "common": {
+    "file": "File",
+    "rule": "Rule",
+    "score": "Score",
+    "issues": "issues",
+    "suggestions": "Suggestions",
+    "examples": "Examples",
+    "category": "Category",
+    "priority": "Priority",
+    "high": "High",
+    "medium": "Medium",
+    "low": "Low",
+    "error": "ERROR",
+    "warning": "WARNING",
+    "info": "INFO",
+    "passed": "passed",
+    "failed": "failed"
+  }
+}

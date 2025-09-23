@@ -1,0 +1,15 @@
+src/
+*.ts
+!dist/**/*.d.ts
+tsconfig.json
+.gitignore
+.eslintrc.*
+jest.config.*
+*.test.*
+*.spec.*
+coverage/
+.nyc_output/
+examples/
+docs/
+.github/
+*.log

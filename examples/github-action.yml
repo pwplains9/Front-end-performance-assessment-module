@@ -1,0 +1,99 @@
+# .github/workflows/code-quality.yml
+name: Frontend Code Quality Assessment
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  assess-quality:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+        cache: 'npm'
+        
+    - name: Install dependencies
+      run: npm ci
+      
+    - name: Install Frontend Assessor
+      run: npm install -g frontend-performance-assessor
+      
+    - name: Run code quality assessment
+      run: |
+        frontend-assessor assess ./src --output json --path assessment.json
+        
+    - name: Generate HTML report
+      run: |
+        frontend-assessor assess ./src --output html --path quality-report.html
+        
+    - name: Upload assessment results
+      uses: actions/upload-artifact@v3
+      with:
+        name: code-quality-report
+        path: |
+          assessment.json
+          quality-report.html
+          
+    - name: Comment PR with results
+      if: github.event_name == 'pull_request'
+      uses: actions/github-script@v6
+      with:
+        script: |
+          const fs = require('fs');
+          
+          try {
+            const assessment = JSON.parse(fs.readFileSync('assessment.json', 'utf8'));
+            
+            const comment = `
+            ## 🔍 Frontend Code Quality Assessment
+            
+            **Overall Score:** ${assessment.assessment.overallScore}/100 (${assessment.assessment.level.toUpperCase()})
+            
+            ### 📊 Category Breakdown:
+            ${assessment.categories.map(cat => 
+              `- **${cat.name}:** ${cat.percentage}% (${cat.issuesCount} issues)`
+            ).join('\n')}
+            
+            ### 🚨 Critical Issues: ${assessment.statistics.severityBreakdown.error}
+            ### ⚠️  Warnings: ${assessment.statistics.severityBreakdown.warning}
+            
+            ${assessment.assessment.overallScore < 70 ? 
+              '⚠️ **Code quality is below recommended threshold. Please review the issues above.**' : 
+              '✅ **Good code quality! Keep up the great work!**'
+            }
+            
+            [📄 View detailed HTML report](https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId})
+            `;
+            
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: comment
+            });
+          } catch (error) {
+            console.log('Could not post assessment results:', error.message);
+          }
+          
+    - name: Fail if quality is too low
+      run: |
+        SCORE=$(node -e "
+          const data = require('./assessment.json');
+          console.log(data.assessment.overallScore);
+        ")
+        
+        if [ $SCORE -lt 50 ]; then
+          echo "❌ Code quality score ($SCORE) is below minimum threshold (50)"
+          exit 1
+        else
+          echo "✅ Code quality score ($SCORE) meets requirements"
+        fi
