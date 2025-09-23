@@ -1,12 +1,15 @@
 {
   "name": "frontend-performance-assessor",
-  "version": "1.0.0",
-  "description": "Модуль для оценки производительности и качества кода frontend разработчиков с поддержкой различных уровней (Junior/Middle/Senior)",
+  "version": "1.1.0",
+  "description": "A comprehensive module for assessing frontend developer performance with support for different levels (Junior/Middle/Senior) and frameworks (Vue, React, Vanilla JS). Includes internationalization support for English, Russian, and Ukrainian.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
-    "dist",
-    "README.md"
+    "dist/**/*",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md",
+    "docs/**/*"
   ],
   "scripts": {
     "build": "tsc && npm run copy-locales",
@@ -14,7 +17,9 @@
     "dev": "tsc --watch",
     "test": "jest",
     "lint": "eslint src/**/*.ts",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "prepack": "npm run build",
+    "postpack": "echo 'Package created successfully!'"
   },
   "keywords": [
     "frontend",
@@ -25,9 +30,21 @@
     "vue",
     "react",
     "vanilla-js",
-    "vite"
+    "vite",
+    "typescript",
+    "cli",
+    "code-analysis",
+    "i18n",
+    "internationalization",
+    "junior",
+    "middle",
+    "senior",
+    "developer-level"
   ],
-  "author": "Frontend Performance Assessor Team",
+  "author": {
+    "name": "Alex Design",
+    "email": "byalexdesign@gmail.com"
+  },
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^20.0.0",
@@ -38,9 +55,11 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
-    "glob": "^10.0.0",
     "chalk": "^5.0.0",
-    "commander": "^11.0.0"
+    "commander": "^11.0.0",
+    "glob": "^10.0.0",
+    "i18next": "^23.11.5",
+    "i18next-fs-backend": "^2.3.1"
   },
   "bin": {
     "frontend-assessor": "./dist/cli.js"
