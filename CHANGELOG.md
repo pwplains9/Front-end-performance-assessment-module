@@ -5,6 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.2] - 2024-01-15
+
+### 🔧 Fixed
+- **Repository name**: Updated all GitHub URLs to use correct repository name `Front-end-performance-assessment-module`
+- **package.json**: Fixed repository, bugs, and homepage URLs with correct repository name
+- **README.md**: Updated issue tracker link with correct repository name
+- **CHANGELOG.md**: Fixed repository references
+
+### 📝 Changed
+- **GitHub integration**: All links now point to the correct repository `pwplains9/Front-end-performance-assessment-module`
+
+---
+
 ## [1.1.1] - 2024-01-15
 
 ### 🔧 Fixed
