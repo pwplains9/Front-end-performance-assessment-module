@@ -38,7 +38,7 @@ Thank you for your interest in contributing to Frontend Performance Assessor! Th
 ### Installation
 ```bash
 # Clone the repository
-git clone https://github.com/pwplains9/frontend-performance-assessor.git
+git clone https://github.com/pwplains9/Front-end-performance-assessment-module.git
 cd frontend-performance-assessor
 
 # Install dependencies
