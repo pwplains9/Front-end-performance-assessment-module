@@ -69,10 +69,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/frontend-performance-assessor/frontend-performance-assessor.git"
+    "url": "https://github.com/pwplains9/frontend-performance-assessor.git"
   },
   "bugs": {
-    "url": "https://github.com/frontend-performance-assessor/frontend-performance-assessor/issues"
+    "url": "https://github.com/pwplains9/frontend-performance-assessor/issues"
   },
-  "homepage": "https://github.com/frontend-performance-assessor/frontend-performance-assessor#readme"
+  "homepage": "https://github.com/pwplains9/frontend-performance-assessor#readme"
 }

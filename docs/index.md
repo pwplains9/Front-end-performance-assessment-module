@@ -82,7 +82,7 @@ Structured data for programmatic processing.
 
 ## 🔗 Links
 
-- [GitHub Repository](https://github.com/frontend-performance-assessor/frontend-performance-assessor)
+- [GitHub Repository](https://github.com/pwplains9/frontend-performance-assessor)
 - [NPM Package](https://www.npmjs.com/package/frontend-performance-assessor)
 - [Examples](../examples/)
 - [Changelog](../CHANGELOG.md)
@@ -92,7 +92,7 @@ Structured data for programmatic processing.
 Need help? 
 - 📧 Email: support@frontend-assessor.com
 - 💬 Discord: [Frontend Assessor Community](https://discord.gg/frontend-assessor)
-- 🐛 Issues: [GitHub Issues](https://github.com/frontend-performance-assessor/frontend-performance-assessor/issues)
+- 🐛 Issues: [GitHub Issues](https://github.com/pwplains9/frontend-performance-assessor/issues)
 
 ---
 

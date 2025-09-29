@@ -38,7 +38,7 @@
 ### Встановлення
 ```bash
 # Клонуйте репозиторій
-git clone https://github.com/frontend-performance-assessor/frontend-performance-assessor.git
+git clone https://github.com/pwplains9/frontend-performance-assessor.git
 cd frontend-performance-assessor
 
 # Встановіть залежності

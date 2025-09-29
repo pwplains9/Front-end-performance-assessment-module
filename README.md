@@ -342,7 +342,7 @@ MIT License - see [LICENSE](LICENSE) file
 
 ## 🐛 Report Issues
 
-If you find a bug or want to suggest an improvement, create an issue in the [GitHub repository](https://github.com/frontend-performance-assessor/frontend-performance-assessor/issues).
+If you find a bug or want to suggest an improvement, create an issue in the [GitHub repository](https://github.com/pwplains9/frontend-performance-assessor/issues).
 
 ## 📞 Support
 
