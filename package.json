@@ -1,6 +1,6 @@
 {
   "name": "frontend-performance-assessor",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A comprehensive module for assessing frontend developer performance with support for different levels (Junior/Middle/Senior) and frameworks (Vue, React, Vanilla JS). Includes internationalization support for English, Russian, and Ukrainian.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
